@@ -83,17 +83,17 @@ if __name__ == '__main__':
             while(not found_temp or not found_hum):
                 
                 buf = serialObj.readline()
-                if len(buf) < 1:
+                if len(buf) < 3:
                     # time.sleep(10/1000)
                     continue
                 
-                if buf[0:11] == 'Temperature' and len(buf) == 17:
-                    data[0] = int(buf[13:15])
-                    str_data[0] = buf[13:15]
+                if buf[0:6] == 'temp: ' and len(buf) > 10 and len(buf) < 14:
+                    data[0] = float(buf[6:])
+                    str_data[0] = buf[6:-2]
                     found_temp = True
-                elif buf[0:8] == 'Humidity' and len(buf) == 21:
-                    data[1] = int(buf[13:15])
-                    str_data[1] = buf[13:15]
+                elif buf[0:6] == 'humi: ' and len(buf) > 10 and len(buf) < 14:
+                    data[1] = float(buf[6:])
+                    str_data[1] = buf[6:-2]
                     found_hum = True
 
                 serialObj.flush();

@@ -1,5 +1,6 @@
-/home/jan/GitHub/temphum/arduino/bin/nano328/nano328/dht11.cpp.o: \
- dht11.cpp dht11.h \
+/home/jan/GitHub/temphum/arduino/bin/nano328/nano328/userlibs/DHTlib/DHTlib.cpp.o: \
+ /home/jan/GitHub/temphum/arduino/lib/DHTlib/DHTlib.cpp \
+ /home/jan/GitHub/temphum/arduino/lib/DHTlib/DHTlib.h \
  /usr/share/arduino/hardware/arduino//cores/arduino/Arduino.h \
  /usr/share/arduino/hardware/arduino//cores/arduino/binary.h \
  /usr/share/arduino/hardware/arduino//cores/arduino/WCharacter.h \

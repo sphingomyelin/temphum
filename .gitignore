@@ -26,3 +26,6 @@
 *.exe
 *.out
 *.app
+
+# All useless .jsons
+python_scripts/weather_log_*.json

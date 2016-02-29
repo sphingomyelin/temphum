@@ -38,7 +38,7 @@
 // Released to the public domain
 //
 
-#include "dht.h"
+#include "DHTlib.h"
 
 /////////////////////////////////////////////////////
 //

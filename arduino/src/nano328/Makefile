@@ -76,4 +76,4 @@ OBJDIR            = $(PROJECT_DIR)/bin/$(CURRENT_DIR)/$(BOARD_TAG)
 include $(ARDMK_DIR)/Arduino.mk
 
 ### ARDUINO_LIBS (because automatic detection doesn't work)
-#ARDUINO_LIBS = MultiLinearCamera Localization
+ARDUINO_LIBS = DHT11
